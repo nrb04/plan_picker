@@ -1,8 +1,10 @@
+import Accordian from "../../components/Accordian/Accordian";
+
 const SecondHero = () => {
   return (
-    <div className="w-8/12 mx-auto">
-      this is other hero((assign to Mostofa Asik))
-    </div>
+    <>
+      <Accordian></Accordian>
+    </>
   );
 };
 
