@@ -1,12 +1,13 @@
 import { useState } from "react";
+import {GiClockwork} from 'react-icons/gi'
 
 const Navber = () => {
   const [isMenuHidden, setMenuHidden] = useState(true);
 
-
   const toggleMenu = () => {
     setMenuHidden(prevState => !prevState);
   };
+
 
 
   return (
@@ -20,18 +21,18 @@ const Navber = () => {
               {/* logo */}
               <div>
                 <a href="#" className="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
-                  <svg className="h-6 w-6 mr-1 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                  </svg>
-                  <span className="font-bold">Better Dev</span>
+                <GiClockwork className="text-4xl text-blue-500"></GiClockwork> 
+                  <span className="font-bold pl-1"> Plan Picker</span>
                 </a>
               </div>
 
               {/* primary nav */}
-              <div className="hidden md:flex items-center space-x-1">
-                <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900">Features</a>
-                <a href="#" className="py-5 px-3 text-gray-700 hover:text-gray-900">Pricing</a>
-              </div>
+              <ul className="hidden md:flex items-center space-x-1">
+                <li className="py-5 px-3 text-gray-700 hover:text-gray-900"><a href="#">Features</a></li>
+                <li className="py-5 px-3 text-gray-700 hover:text-gray-900"><a href="#">Pricing</a></li>
+                <li className="py-5 px-3 text-gray-700 hover:text-gray-900"><a href="#">Dashboard</a></li>
+                
+              </ul>
             </div>
 
             {/* secondary nav */}
