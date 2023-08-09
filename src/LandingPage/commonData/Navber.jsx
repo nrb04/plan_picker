@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Navber = () => {
   const [isMenuHidden, setMenuHidden] = useState(true);
 
@@ -64,5 +66,4 @@ const Navber = () => {
     </nav>
   )
 }
-
 export default Navber;
