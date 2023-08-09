@@ -1,11 +1,5 @@
-
-
 const Navber = () => {
-    return (
-        <div>
-            this is Navber
-        </div>
-    );
+  return <div>this is Navber (assign to tanjim )</div>;
 };
 
 export default Navber;
