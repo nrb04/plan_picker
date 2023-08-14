@@ -11,6 +11,7 @@ import ServiceCard from './serviceCard/ServiceCard1';
 import ServiceCard2 from './serviceCard/serviceCard2';
 import ServiceCard3 from './serviceCard/ServiceCard3';
 import ServiceCard4 from './serviceCard/ServiceCard4';
+import ServiceCardAccordion from './serviceCard/ServicecardAccordion';
 
 const Services = () => {
   return (
@@ -87,6 +88,9 @@ const Services = () => {
         <ServiceCard2></ServiceCard2>
         <ServiceCard3></ServiceCard3>
         <ServiceCard4></ServiceCard4>
+      </div>
+      <div>
+        <ServiceCardAccordion></ServiceCardAccordion>
       </div>
     </div>
   );
