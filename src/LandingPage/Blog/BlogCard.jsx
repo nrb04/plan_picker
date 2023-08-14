@@ -5,6 +5,7 @@ import {
     Typography,
     Button,
   } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 
 
@@ -29,11 +30,11 @@ const BlogCard = ({article}) => {
                     {article.articleName}
                 </Typography>
                 <Typography>
-                    <p>Read time : {article.readTime}</p>
+                    <span>Read time : {article.readTime}</span>
                 </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-                <a href="#" className="inline-block">
+                <Link to={`/blog-details/${article._id}`} className="inline-block">
                     <Button size="sm" variant="text" className="flex items-center gap-2">
                         Learn More
                         <svg
@@ -51,7 +52,7 @@ const BlogCard = ({article}) => {
                             />
                         </svg>
                     </Button>
-                </a>
+                </Link>
             </CardFooter>
         </Card>
     );
