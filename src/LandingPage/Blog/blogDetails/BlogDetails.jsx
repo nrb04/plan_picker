@@ -40,6 +40,11 @@ const BlogDetails = () => {
                     <img className='max-w-[500px]' src={article.imageURL} alt="" />
                 </div>
             </div>
+            <div className='lg:px-10'>
+                <p>Category: {article.category}</p>
+                <p>Tags: {article.tags?.map((tag, idx) => <span key={idx} >{tag} ,</span>)}</p>
+                <p>About: {article.content}</p>
+            </div>
         </div>
     );
 };

@@ -8,9 +8,9 @@ const StayConnectedSection = () => {
                     <h1 className="text-4xl font-bold">Don't leave your prospects, customers, and candidates waiting</h1>
                     <p>Calendly eliminates the scheduling back and forth and helps you hit goals faster. Get started in seconds.</p>
                 </div>
-                <div className="md:flex gap-5 justify-center my-10">
-                <Button color="blue">Sing up for free</Button>
-                <Button color="white">Contact sales</Button>
+                <div className="flex md:flex-row flex-col gap-5 justify-center my-10">
+                <Button className="block" color="blue">Sing up for free</Button>
+                <Button className="block" color="white">Contact sales</Button>
                 </div>
             </div>            
         </div>
