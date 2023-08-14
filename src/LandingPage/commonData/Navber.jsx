@@ -12,7 +12,7 @@ const Navber = () => {
   return (
     <nav>
       {/* navbar goes here */}
-      <nav className="bg-gray-100">
+      <nav className="">
         <div className="">
           <div className="flex justify-between">
             <div className="flex space-x-4">
