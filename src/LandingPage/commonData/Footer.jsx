@@ -3,7 +3,7 @@ import { FaDribbble, FaFacebook, FaGithub, FaInstagram, FaTwitter } from 'react-
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-white">
+      <footer className="bg-[#f7fafc]">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-10 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
             <div

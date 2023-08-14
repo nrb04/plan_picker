@@ -1,6 +1,7 @@
 import Banner from "./ Banner";
 import Hero from "./Hero";
 import SecondHero from "./SecondHero";
+import Special from "./Special";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Banner></Banner>
       <Hero></Hero>
       <SecondHero></SecondHero>
+      <Special></Special>
     </div>
   );
 };
