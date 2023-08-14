@@ -13,7 +13,7 @@ const Navber = () => {
     <nav>
       {/* navbar goes here */}
       <nav className="bg-gray-100">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="">
           <div className="flex justify-between">
             <div className="flex space-x-4">
               {/* logo */}
@@ -83,21 +83,24 @@ const Navber = () => {
         <div
           className={`mobile-menu md:hidden ${isMenuHidden ? "hidden" : ""}`}
         >
-          <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-            Features
-          </a>
-          <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-            Pricing
-          </a>
-          <a href="" className="py-5 px-3">
-            Login
-          </a>
-          <a
-            href=""
+          <Link to="/services" className="block py-2 px-4 text-sm hover:bg-gray-200">
+          Services
+          </Link>
+          <Link to="/contact" className="block py-2 px-4 text-sm hover:bg-gray-200">
+          Contact
+          </Link>
+          <Link to="/about" className="block py-2 px-4 text-sm hover:bg-gray-200">
+          About US
+          </Link>
+          <Link to="/blog" className="block py-2 px-4 text-sm hover:bg-gray-200">
+          Blog
+          </Link>
+          <Link
+            to="/signup"
             className="py-2 px-3 block bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
           >
             Signup
-          </a>
+          </Link>
         </div>
       </nav>
 
