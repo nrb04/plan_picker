@@ -30,7 +30,7 @@ import {
 const ServiceCard2 = () => {
     return (
         <div className='mb-6'>
-            <Card color="gray" variant="gradient" className="w-full md:h-[800px] md:max-w-[300px] p-8">
+            <Card color="gray" variant="gradient" className="w-full md:h-[800px] p-8">
                 <CardHeader
                     floated={false}
                     shadow={false}

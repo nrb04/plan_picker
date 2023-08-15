@@ -53,7 +53,7 @@ const Special = () => {
   ];
 
     return (
-        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-10 lg:px-8">
+        <div className="mx-4 md:mx-12 px-4 py-16 sm:px-10 lg:px-8">
             <h2 className='text-4xl font-semibold text-center pb-8'>Special features for teams who <br /> conduct meeting at scale</h2>
             <Tabs value={activeTab}>
                 <TabsHeader

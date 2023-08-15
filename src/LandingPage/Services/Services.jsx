@@ -8,14 +8,14 @@ import {
 } from "@material-tailwind/react";
 import { GiCheckMark } from 'react-icons/gi';
 import ServiceCard from './serviceCard/ServiceCard1';
-import ServiceCard2 from './serviceCard/serviceCard2';
+import ServiceCard2 from './serviceCard/ServiceCard2';
 import ServiceCard3 from './serviceCard/ServiceCard3';
 import ServiceCard4 from './serviceCard/ServiceCard4';
-import ServiceCardAccordion from './serviceCard/ServicecardAccordion';
+import ServiceCardAccordion from './serviceCard/ServiceCardAccordion';
 
 const Services = () => {
   return (
-    <div className="mx-4 md:mx-12 py-16 sm:px-10 lg:px-8">
+    <div className="mx-4 md:mx-12 py-16 sm:px-10">
       <Card className="w-full flex-row">
         {/* <CardHeader
           shadow={false}
