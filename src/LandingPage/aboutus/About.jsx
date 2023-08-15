@@ -230,7 +230,7 @@ const About = () => {
 
           {/* people say about us */}
           <div className="py-[75px] md:py-[150px] gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto p-4">
-            <div className="bg-gray-300 rounded-xl p-7">
+            <div className="bg-gray-300 rounded-xl p-7  hover:bg-gray-200  shadow-md hover:shadow-lg transition duration-300 ease-in-out">
               <div className="mb-6">
                 <img className="rounded-full w-14 h-14" src={avatar} alt="" />
               </div>
