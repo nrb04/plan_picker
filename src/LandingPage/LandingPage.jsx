@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Navber from "./commonData/Navber";
 import Footer from "./commonData/Footer";
+import Navbar from "./commonData/Navbar";
 
 const LandingPage = () => {
   return (
     <div>
-      <Navber></Navber>
+      <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>
     </div>

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from "react-hook-form"
+import { FaBeer, FaGoogle, FaMicrosoft } from 'react-icons/fa';
 import {
     Button,
     Dialog,
@@ -12,34 +13,58 @@ import {
     Checkbox,
   } from "@material-tailwind/react";
 import SignUp from '../signUp/SignUp';
+import { AuthContext } from '../../providers/AuthProvider';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen((cur) => !cur);
 
+    const {logIn, googleLogin} = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    const handleGoogleSignIN = () => {
+        googleLogin()
+        .then(result => {
+            const loggedUser = result.user;
+            console.log(loggedUser);
+            navigate('/');
+        })
+        .catch(error => {
+            console.log(error);
+        })
+    }
+
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = (data, e) => {
         e.target.reset();
         console.log(data);
+        logIn(data.email, data.password)
+        .then(result => {
+            const loggedUser = result.user;
+            console.log(loggedUser);
+            alert('User Login SuccessFully!')
+            navigate('/')
+        })
+        .catch(error => {
+            console.log(error);
+        })
     }
 
     return (
         <div>
             <Button className='bg-teal-500' onClick={handleOpen}>Sign In</Button>
                 <Dialog
-                    size="xs"
+                    size="md"
                     open={open}
                     handler={handleOpen}
                     className="bg-transparent shadow-none"
                 >
-                    <Card className="mx-auto w-full max-w-2xl">
-                        <CardHeader
-                            variant="gradient"
-                            color="blue"
-                            className="mb-4 grid h-28 place-items-center"
+                    <Card className="mx-auto w-full md:max-w-2xl">
+                        <CardHeader className='text-center py-3 bg-teal-500'
                         >
                             <Typography variant="h3" color="white">
-                            Sign In
+                            Plan Picker Sign In
                             </Typography>
                         </CardHeader>
                         <form onSubmit={handleSubmit(onSubmit)}>
@@ -53,11 +78,21 @@ const Login = () => {
                                 </div>
                             </CardBody>
                             <div className='px-6'>
-                                <Button variant="gradient" onClick={handleOpen} fullWidth>
+                                <Button className='' variant="gradient" fullWidth>
                                 <input className="text-xl cursor-pointer" type="submit" value="Sign In" />
                                 </Button>
                             </div>
                         </form>
+                        <div className='px-6 my-3'>
+                        <a className=''>
+                            <Button onClick={handleGoogleSignIN} className='w-full flex items-center justify-center gap-4' variant="outlined"><FaGoogle className='text-xl text-teal-500'></FaGoogle>Sign In With Google</Button>
+                        </a>
+                        </div>
+                        <div className='px-6'>
+                        <a className=''>
+                            <Button className='w-full flex items-center justify-center gap-4' variant="outlined"><FaMicrosoft className='text-xl'></FaMicrosoft>Sign In With Microsoft</Button>
+                        </a>
+                        </div>
                         <CardFooter className="pt-0">
                             <Typography variant="small" className="mt-6 flex justify-center">
                             Don&apos;t have an account?
