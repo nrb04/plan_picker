@@ -4,11 +4,39 @@ import plannedCalendar from "../../assets/people-planned-in-calendar.jpg";
 import EfficientPlanning from "../../assets/Efficient Planning.jpg";
 import avatar from "../../assets/avatar.jpg";
 import calendar from "../../assets/calendar.jpg";
+import MyCalendar from "../../calendar/MyCalendar";
 
 const About = () => {
+
+  const events = [
+    {
+      title: "Meeting",
+      start: new Date(2023, 7, 16, 10, 0),
+      end: new Date(2023, 7, 16, 12, 0),
+      description: "Discuss project updates.",
+    },
+    // {
+    //   title: "Event 1",
+    //   start: new Date(),
+    //   end: new Date(new Date().setHours(new Date().getHours() + 1)),
+    // },
+    // {
+    //   title: "Event 2",
+    //   start: new Date(new Date().setDate(new Date().getDate() + 1)),
+    //   end: new Date(
+    //     new Date()
+    //       .setDate(new Date().getDate() + 1)
+    //       .setHours(new Date().getHours() + 1)
+    //   ),
+    // },
+  ];
+
   return (
-    <div className="bg-gray-200">
-      <div>
+    <div>
+      <h1>Calendar events</h1>
+      <MyCalendar events={events}/>
+
+      <div className="bg-gray-200 mt-20">
         <div className="">
           <div className="relative">
             <div
@@ -186,7 +214,9 @@ const About = () => {
           {/* App Features */}
           <div className="py-[75px] md:py-[150px]  bg-[#FDB833] mb-8 rounded-xl">
             <div className=" max-w-7xl mx-auto p-4">
-              <h1 className="mb-8 text-2xl md:text-3xl font-semibold">App Features</h1>
+              <h1 className="mb-8 text-2xl md:text-3xl font-semibold">
+                App Features
+              </h1>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8  ">
                 <div className="text-left">
@@ -264,7 +294,9 @@ const About = () => {
           {/* questions */}
           <div className="py-[75px] md:py-[150px] bg-[#333533] text-white rounded-xl">
             <div className=" max-w-7xl mx-auto p-4">
-              <h1 className="mb-8 text-2xl md:text-3xl  font-semibold">Got Questions?</h1>
+              <h1 className="mb-8 text-2xl md:text-3xl  font-semibold">
+                Got Questions?
+              </h1>
               <div className="grid grid-cols-1 md:grid-cols-2 md:text-left gap-8">
                 <div>
                   <h1 className="text-lg">Can I customize reminders?</h1>
