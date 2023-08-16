@@ -22,7 +22,7 @@ const About = () => {
 
               {/* front text */}
               <div className="flex justify-center items-center flex-col  max-w-7xl mx-auto lg:h-[700px] md:h-[600px] h-[500px]">
-                <h1 className="text-4xl  md:text-5xl lg:text-6xl font-semibold text-[#FFEE32] mb-4 z-10 text-center">
+                <h1 className="text-3xl  md:text-4xl lg:text-6xl font-semibold text-[#FFEE32] mb-4 z-10 text-center">
                   Experience Exceptional Scheduling Made Simple
                 </h1>
 
@@ -59,7 +59,7 @@ const About = () => {
           {/* Revolutionize of Schedule */}
           <div className="py-[75px] md:py-[150px] flex flex-col md:flex-row gap-4 max-w-7xl mx-auto p-4">
             <div className="flex flex-col justify-center">
-              <h1 className="font-semibold text-3xl">
+              <h1 className="font-semibold text-2xl md:text-3xl">
                 Revolutionize Your Schedule
               </h1>
               <p className=" mt-6">
@@ -101,7 +101,7 @@ const About = () => {
                 alt=""
               />
               <div className="flex flex-col justify-center">
-                <h1 className="font-semibold text-3xl">
+                <h1 className="font-semibold text-2xl md:text-3xl">
                   Time Management Superpowers at Your Fingertips
                 </h1>
                 <p className="font-semibold mt-8">
@@ -156,7 +156,7 @@ const About = () => {
                 alt=""
               />
               <div className="flex flex-col justify-center">
-                <h1 className="font-semibold text-3xl">
+                <h1 className="font-semibold text-2xl md:text-3xl">
                   Scheduling Reinvented
                 </h1>
                 <p className="font-semibold mt-3">
@@ -186,7 +186,7 @@ const About = () => {
           {/* App Features */}
           <div className="py-[75px] md:py-[150px]  bg-[#FDB833] mb-8 rounded-xl">
             <div className=" max-w-7xl mx-auto p-4">
-              <h1 className="mb-8 text-3xl font-semibold">App Features</h1>
+              <h1 className="mb-8 text-2xl md:text-3xl font-semibold">App Features</h1>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8  ">
                 <div className="text-left">
@@ -262,9 +262,9 @@ const About = () => {
           </div>
 
           {/* questions */}
-          <div className="py-[150px] bg-[#333533] text-white rounded-xl">
+          <div className="py-[75px] md:py-[150px] bg-[#333533] text-white rounded-xl">
             <div className=" max-w-7xl mx-auto p-4">
-              <h1 className="mb-8 text-3xl font-semibold">Got Questions?</h1>
+              <h1 className="mb-8 text-2xl md:text-3xl  font-semibold">Got Questions?</h1>
               <div className="grid grid-cols-1 md:grid-cols-2 md:text-left gap-8">
                 <div>
                   <h1 className="text-lg">Can I customize reminders?</h1>
@@ -300,9 +300,9 @@ const About = () => {
           </div>
 
           {/*  */}
-          <div className="py-[200px]  bg-gray-100">
+          <div className="py-[75px] md:py-[150px]  bg-gray-100">
             <div className=" max-w-7xl mx-auto p-4">
-              <h1 className="font-semibold text-4xl">
+              <h1 className="font-semibold text-2xl md:text-4xl">
                 Ready to revolutionize your scheduling? Join us now!
               </h1>
               <div className=" gap-x-3 sm:flex-row flex gap-3 mt-8 flex-col">
