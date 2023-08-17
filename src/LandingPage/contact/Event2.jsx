@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import { BiInfoCircle } from "react-icons/bi";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import { Checkbox } from "@material-tailwind/react";
 
 
-const Event = () => {
+
+const Event2 = () => {
     const [value, setValue] = useState('');
 
     return (
-        <div className='mt-10 bg-white px-10 py-6'>
-            <h2 className='text-center'>One On One</h2>
+        <div className='mt-10 bg-gray-100 px-10 py-6'>
+            <h2 className='text-center'>Many To Many</h2>
             <div className=' flex flex-col gap-6 md:flex-row md:justify-between  '>
                 <div className='flex gap-2'>
                     <div className='w-7 h-7 bg-red-400 rounded-full'></div>
@@ -63,6 +65,18 @@ const Event = () => {
                     <input type="text" className="input input-bordered font-semibold w-full max-w-xs" />
 
                 </div>
+
+                <div className='form-control w-full max-w-xs mt-10'>
+                    <label className="label">
+                        <span className="label-text font-bold flex gap-3 items-center">Max invitees in a spot *  <BiInfoCircle></BiInfoCircle></span>
+                    </label>
+
+                    <input type="text" className="input input-bordered font-semibold w-1/3 max-w-xs" />
+                </div>
+                <div className='form-control w-full max-w-md mt-10  '>
+                    <Checkbox label="Display remaining spots on booking page" />
+                </div>
+
                 <div className="form-control w-full max-w-xs mt-10">
                     <label className="label">
                         <span className="label-text font-bold flex gap-3 items-center">Event Color *  <BiInfoCircle></BiInfoCircle></span>
@@ -80,7 +94,7 @@ const Event = () => {
             </form>
             <div className="divider"></div>
             <div className='flex justify-center md:justify-end'>
-                <div className='flex gap-4 '>
+                <div className='flex gap-4'>
                     <button className='rounded-md btn p-2'>Cancel</button>
                     <button className='rounded-md btn btn-primary px-2 '>Next</button>
                 </div>
@@ -89,4 +103,4 @@ const Event = () => {
     );
 };
 
-export default Event;
+export default Event2;

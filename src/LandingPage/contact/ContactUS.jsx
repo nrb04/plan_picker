@@ -1,4 +1,5 @@
 import Event from "./Event";
+import Event2 from "./Event2";
 
 const ContactUS = () => {
   return <>
@@ -21,6 +22,7 @@ const ContactUS = () => {
       </div>
     </div>
     <Event></Event>
+    <Event2></Event2>
   </>;
 };
 
