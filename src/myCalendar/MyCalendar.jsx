@@ -3,7 +3,8 @@ import React from "react";
 import "./MyCalendar.css"; // Import custom CSS for styling
 import EventSearch from "./eventSearch/EventSearch";
 import CreateEventButton from "./createEvent/CreateEvent";
-import NewEventTypes from "./eventTypes/NewEventTypes";
+import NewEventTypes from "./newEventTypes/NewEventTypes";
+import EventNavbar from "./eventNavbar/EventNavbar";
 
 const MyCalendar = () => {
   const events = [
@@ -26,9 +27,13 @@ const MyCalendar = () => {
   return (
     <div className="container mx-auto py-8">
       {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 */}
-      
+
       <div className="flex justify-between items-center">
-        <h1 className="">My Calendar</h1>
+        <div>
+          <h1 className="">My Calendar</h1>
+            <EventNavbar/>
+          
+        </div>
         <CreateEventButton />
       </div>
       <div className="flex">
