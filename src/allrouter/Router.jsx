@@ -7,6 +7,7 @@ import About from "../LandingPage/aboutus/About";
 import Blog from "../LandingPage/Blog/Blog";
 import BlogDetails from "../LandingPage/Blog/blogDetails/BlogDetails";
 import WeeklySedule from "../components/WeeklySedule";
+import Successful from "../components/Successful";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/week",
         element: <WeeklySedule></WeeklySedule>
+      },
+      {
+        path: "/success",
+        element: <Successful></Successful>
       },
       {
         path: '/blog-details/:id',
