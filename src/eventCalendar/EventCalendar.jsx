@@ -6,7 +6,7 @@ import withDragAndDrop from "react-big-calendar/lib/addons/dragAndDrop";
 
 const localizer = momentLocalizer(moment);
 
-const MyCalendar = ({ events }) => {
+const EventCalendar = ({ events }) => {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   const handleSelectEvent = (event) => {
@@ -44,4 +44,4 @@ const MyCalendar = ({ events }) => {
   );
 };
 
-export default MyCalendar;
+export default EventCalendar;
