@@ -5,6 +5,7 @@ import EfficientPlanning from "../../assets/Efficient Planning.jpg";
 import avatar from "../../assets/avatar.jpg";
 import calendar from "../../assets/calendar.jpg";
 import MyCalendar from "../../calendar/MyCalendar";
+import CreateEvent from "../../createEvent/CreateEvent";
 
 const About = () => {
 
@@ -33,7 +34,11 @@ const About = () => {
 
   return (
     <div>
-      <h1>Calendar events</h1>
+
+      <CreateEvent/>
+
+      <h1 className="mt-7 text-3xl font-semibold mb-5">Calendar events</h1>
+
       <MyCalendar events={events}/>
 
       <div className="bg-gray-200 mt-20">
