@@ -2268,6 +2268,11 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
+"swiper@^10.1.0":
+  "integrity" "sha512-E+wh+hcSbwlRfXuwBTclcOOikOjNdSF0a2Sdg3J4cIWtHO64A7SaLRfezfrJ67CW3GEc15AduYU2YKlElsjqsQ=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-10.1.0.tgz"
+  "version" "10.1.0"
+
 "tabbable@^6.0.1":
   "integrity" "sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew=="
   "resolved" "https://registry.npmjs.org/tabbable/-/tabbable-6.2.0.tgz"

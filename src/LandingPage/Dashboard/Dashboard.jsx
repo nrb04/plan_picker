@@ -62,10 +62,12 @@ const Dashboard = () => {
                                                 } `}
                                         >
                                             <Link to={Admin.title}>
-                                                <img src={`./src/assets/${Admin.src}.png`} alt={Admin.title} />
-                                                <span className={`${!open && "hidden"} transform transition-transform`}>
-                                                    {Admin.title}
-                                                </span>
+                                                <div className="flex items-center">
+                                                    <img className="me-2" src={`./src/assets/${Admin.src}.png`} alt={Admin.title} />
+                                                    <span className={`${!open && "hidden"} transform transition-transform`}>
+                                                        {Admin.title}
+                                                    </span>
+                                                </div>
                                             </Link>
                                         </li>
                                     ))
@@ -81,10 +83,12 @@ const Dashboard = () => {
                                                 } `}
                                         >
                                             <Link to={User.title}>
-                                                <img src={`./src/assets/${User.src}.png`} alt={User.title} />
-                                                <span className={`${!open && "hidden"} transform transition-transform`}>
-                                                    {User.title}
-                                                </span>
+                                                <div className="flex items-center">
+                                                    <img className="me-2" src={`./src/assets/${User.src}.png`} alt={User.title} />
+                                                    <span className={`${!open && "hidden"} transform transition-transform`}>
+                                                        {User.title}
+                                                    </span>
+                                                </div>
                                             </Link>
                                         </li>
                                     ))
