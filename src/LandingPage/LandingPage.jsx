@@ -4,7 +4,7 @@ import Footer from "./commonData/Footer";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <Navber></Navber>
       <Outlet></Outlet>
       <Footer></Footer>
