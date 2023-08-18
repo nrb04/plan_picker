@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-white">
-        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-10 lg:px-8">
+        <div className=" px-4 py-16 sm:px-10 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
             <div
               className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16"
@@ -22,7 +22,7 @@ const Footer = () => {
                   >
                     <p>VIRTUAL EVENT: AUGUST 01-25</p>
                     <h2>Growth Week: See how 20+ sales, marketing, & CS experts win, keep, and grow revenue!</h2>
-                    <button className="mt-1 w-full bg-teal-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0">Explore Seat</button>
+                    <button className="mt-1 w-full bg-purple-600 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-purple-700 sm:mt-0 sm:w-auto sm:shrink-0">Explore Seat</button>
                   </div>
                 </form>
               </div>
