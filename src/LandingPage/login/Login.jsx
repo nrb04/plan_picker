@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useForm } from "react-hook-form"
-import { FaBeer, FaGoogle, FaMicrosoft } from 'react-icons/fa';
+import { FaMicrosoft } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 import {
     Button,
     Dialog,
@@ -85,7 +86,7 @@ const Login = () => {
                         </form>
                         <div className='px-6 my-3'>
                         <a className=''>
-                            <Button onClick={handleGoogleSignIN} className='w-full flex items-center justify-center gap-4' variant="outlined"><FaGoogle className='text-xl text-teal-500'></FaGoogle>Sign In With Google</Button>
+                            <Button onClick={handleGoogleSignIN} className='w-full flex items-center justify-center gap-4' variant="outlined"><FcGoogle className='text-xl text-teal-500'></FcGoogle>Sign In With Google</Button>
                         </a>
                         </div>
                         <div className='px-6'>
